@@ -1,0 +1,90 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="flex-box.css">
+</head>
+<body>
+
+
+<div class="container">
+<div class="header"><a href="home.html">Главная</a></div>  
+<div class="header"><a href="index.html">Битва при Краване</a></div>
+<div class="header">Битва при Боже</div>
+<div class="header"><a href="siege-of-meaux.html">Осада Мо</a></div>
+    <nav class="nav">
+      <ul>
+        <li><a href="home.html">Главная</a></li>
+        <li><a href="index.html">Битва при Краване</a></li>
+        <li><a href="battle-of-quebek.html">Битва при Квебеке</a></li>
+        <li><a href="battle-of-bouge.html">Битва при Боже</a></li>
+        <li><a href="siege-of-meaux.html">Осада Мо</a></li>
+      </ul>
+    </nav>
+    <div class="burger">
+      <span></span>
+    </div>
+
+<script>
+  document.querySelector('.burger').addEventListener('click', function(){
+    this.classList.toggle('active');
+    document.querySelector('.nav').classList.toggle('open');
+  })
+</script>
+</div>
+<div class="container">
+<div class="main">Битва при Боже</div>
+
+<div class="aside">
+<table>
+  <tr>
+    <th colspan="2">Битва при Боже</th>
+  </tr
+  <tr>
+    <th colspan="2">22 марта 1421</th>
+  </tr>
+  <tr>
+    <th colspan="2">конфликт : столетняя война</th>
+  </tr>
+  <tr>
+    <th colspan="2">место : Боже, Франция</th>
+  </tr>
+  <tr>
+    <th colspan="2"><img class="mount" src="https://upload.wikimedia.org/wikipedia/commons/7/76/Vigiles_du_roi_Charles_VII_53.jpg?uselang=ru"></td>
+  </tr>
+  <tr>
+    <th colspan="2">Стороны</th>
+  </tr>
+  <tr>
+    <td>Англия</td>
+    <td>Франция</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Шотландия</td>
+  </tr>
+  <tr>
+    <th colspan="2">Силы сторон</th>
+  </tr>
+  <tr>
+    <td>4000(участволо 1500)</td>
+    <td>5000</td>
+  </tr>
+  <tr>
+    <th colspan="2">потери</th>
+  </tr>
+  <tr>
+    <td>1000 убитых</td>
+    <td>немного</td>
+  </tr>
+  <tr>
+    <td>500 пленных</td>
+    <td></td>
+  </tr>
+  <tr>
+    <th colspan="2">итог : победа Шотландии и франции</td>
+  </tr>
+</table>
+</div>
+</div>
+</body>
+</html>

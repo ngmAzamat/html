@@ -1,0 +1,40 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        title Youtube
+        link(
+            rel="icon"
+            href="/home/azamat/html/youtube/geo/pngwing.com.png"
+            type="image/x-icon"
+            )
+        
+        link(rel="stylesheet" href="style.css")
+    body
+        .main
+            .account 
+                form(id="main-form" method="post")
+                    h1 вход
+                    .form-group 
+                        input.input(type="text" placeholder="" id="name" required minlength="5" maxlength="10" pattern="[а-яА-Я]+" 
+                        title="имя должно содержать только Английский и Русские Буквы")
+                        label.label(for="name") Имя
+                    .form-group 
+                        input.input(type="email" placeholder="" required title="email должен содержать знак @")
+                        label.label(for="password") email
+                    .form-group 
+                        input.input(type="password" placeholder="" required minlength="4" maxlength="10" title="пароль должен содержать 4 и более вплоть до 15 символов")
+                        label.label(for="password") Пароль
+                    .form-group 
+                        input.input(type="password" placeholder="" required minlength="4" maxlength="15" title="этот пароль должен совподать с превидущим паролем")
+                        label.label(for="repass") Проверка пароля
+                    .form-group 
+                        input.input(type="nubmer" placeholder="" required title="для вас будет зарезервирован номер")
+                        label.label(for="repass") число
+                    .form-group 
+                        label.checkbox(for="repass") я не робот
+                        input(type="checkbox" placeholder="" required title="")
+
+
+
+                    input.button.input(type="submit" name="submit" value="Готово") 

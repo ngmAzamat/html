@@ -1,0 +1,115 @@
+@keyframes move-to-right {
+    30% {
+        transform: translate(0px, 0px);
+    }
+    37% {
+        transform: translate(-10px, -100px);
+    }
+    40% {
+        transform: translate(0px, 0px);
+
+    }
+    100%{
+        translate: 80vw;
+    }
+
+
+}
+
+@keyframes move-to-left {
+    0%{
+        transform: scaleX(-1);
+    }
+    70% {
+        transform: translate(0px, 0px);
+        transform: scaleX(-1);
+        translate: -32vw;
+
+    }
+    100%{
+        translate: -32vw;
+        transform: scaleX(-1);
+        transform: translateY(1000px);
+
+
+    }
+
+
+}
+
+
+
+.cats3 {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    border-bottom: 5px solid red;
+    height: 50px;
+    width: 82.7075vw;
+}
+
+.dino{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    height: 100px;
+    width: 50px;
+
+    animation-name: move-to-left;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+/*    animation-play-state: paused;*/
+}
+
+img {
+    display: flex;
+    justify-content: start;
+    height: 50px;
+    width: 50px;
+/*
+    animation-name: move-to-right;
+    animation-duration: 10s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+*/
+}
+
+
+
+.opium {
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    width: 50px;
+    height: 100px;
+    animation-name: move-to-right;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    /*    animation-play-state: paused;*/
+}
+
+
+.box2 {
+    width: 50px;
+    height: 50px;
+    background-color: lightskyblue;
+    transition-duration: 3s;
+    transition-property: all;
+    transition-delay: 1s;
+    transition-timing-function: ease;
+}
+.box2:hover{
+    transform: translate(100px, 100px);
+
+}
+
+.flag::marker{
+    content: "🇬🇧";
+}
+
+.button {
+    height: 100px;
+    width: 100px;
+}

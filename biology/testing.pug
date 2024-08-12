@@ -1,0 +1,44 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    title hello Louis of anjoi
+    link(
+    rel="stylesheet"
+    href="style.css"
+    )
+  body
+
+    .header 
+        a(href="home.html") Главная
+    .header 
+        a(href="horse.html") Конь
+    .header 
+        a(href="cat.html") Кот
+    .header 
+        a(href="cow.html") Корова
+  
+
+    nav.nav
+      ul
+        li 
+            a(href="home.html") Главная
+        li
+            a(href="horse.html") Конь
+        li
+            a(href="cat.html") Кот
+        li
+            a(href="cow.html") Корова
+
+    
+    .burger
+      span
+    
+
+    script
+        document.querySelector('.burger').addEventListener('click', function(){
+        this.classList.toggle('active');
+        document.querySelector('.nav').classList.toggle('open');
+    })
+
+

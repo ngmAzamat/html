@@ -1,0 +1,36 @@
+.account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    border-collapse: collapse;
+    border-radius: 17px;
+    color:black;
+    height: 400px;
+    width:400px;
+    padding: 25px;
+    background-color: white;
+    box-shadow: 0 4px 16px #ccc;
+    font-family: Reading MegaType;
+}
+.radio {
+    border: 2px solid red;
+}
+
+.radio:hover {
+    border: 2px solid red;
+}
+
+body {
+    background-color: black;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding:0px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+
+
+}

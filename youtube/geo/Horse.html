@@ -1,0 +1,96 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/html/flex-box.css">
+</head>
+<body>
+
+
+<div class="container">
+<div class="header"><a href="home.html">Главная</a></div>
+<div class="header">Конь</div>
+<div class="header"><a href="Cat.html">Кот</a></div>
+<div class="header"><a href="Cow.html">Корова</a></div>
+
+</div>
+
+<body>
+  
+
+    <nav class="nav">
+      <ul>
+        <li><a href="home.html">Главная</a></li>
+        <li><a href="Horse.html">Конь</a></li>
+        <li><a href="Cat.html">Кот</a></li>
+        <li><a href="Cow.html">Корова</a></li>
+      </ul>
+    </nav>
+    <div class="burger">
+      <span></span>
+    </div>
+
+<script>
+  document.querySelector('.burger').addEventListener('click', function(){
+    this.classList.toggle('active');
+    document.querySelector('.nav').classList.toggle('open');
+  })
+</script>
+
+<div class="container">
+<div class="main">
+  <audio controls>
+    <source src="zvuk-loshadi.mp3" type="audio/mp3">
+  </audio> 
+</div>
+
+<div class="aside">
+<table>
+  <tr>
+    <th colspan="2">Домашняя Лошадь</th>
+  <tr>
+    <th colspan="2"><img class="mount quebek" src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Pernod_Al_Ariba_0046b.jpg?uselang=ru"></th>
+  <tr>
+    <td>Домен</td>
+    <td>Эукариоты</th>
+    <td>Eukaryota</td>
+  </tr>
+  <tr>
+    <td>царство</td>
+    <td>Животные</td>    
+    <td>Animalia</td>
+  </tr>
+  <tr>
+    <td>Тип</td>
+    <td>Хордовые</td>
+    <td>Chordata</td>
+  </tr>
+  <tr>
+    <td>Класс</td>
+    <td>Млекопитающие</td>
+    <td>Mammalia</td>
+  </tr>  
+  <tr>
+    <td>Отряд</td>
+    <td>непарнокопытные</td>
+    <td>Perissodactyla</td>
+  </tr> 
+  <tr>
+    <td>Семейство</td>
+    <td>Лошадиные</td>
+    <td>Equidae</td>
+  </tr> 
+  <tr>
+    <td>Род</td>
+    <td>Лошади</td>
+    <td>Equus ferus</td>
+  </tr>
+  <tr>
+    <td>Вид</td>
+    <td>Домашняя Лошадь</td>
+    <td>Equus ferus caballus</td>
+  </tr>
+</table>
+</div>
+</div>
+</body>
+</html>

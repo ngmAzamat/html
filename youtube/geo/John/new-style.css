@@ -1,0 +1,32 @@
+
+img {
+    height: 1200px;
+}
+
+.container {
+    position: relative;
+  }
+  
+  .image {
+    height: 1400px;
+  }
+  
+  .image1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .image2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1500px;
+  }
+  .image3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200px;
+  }
+  

@@ -1,0 +1,41 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        title Youtube
+        link(
+            rel="icon"
+            href="/home/azamat/html/youtube/geo/pngwing.com.png"
+            type="image/x-icon"
+            )
+        
+        link(rel="stylesheet" href="style.css")
+    body
+        .main
+            .account 
+                form(id="main-form" method="post")
+                    h1 вход
+                    .form-group 
+                        select
+                            option видео по истории
+                            option видео по смешарикам
+                            option видео по мемам               
+                    .form-group 
+                        input.input(type="file")
+                        label.label email
+                    .form-group 
+                        textarea(type="password" cols="10" rows="30")
+                    .form-group 
+                        textarea(disabled type="password" cols="10" rows="30")
+                    .form-group 
+                        button(type="reset")
+                    .form-group 
+                        input.input(type="nubmer" placeholder="" required title="для вас будет зарезервирован номер")
+                        label.label() число
+                    .form-group 
+                        label.checkbox() я не робот
+                        input(type="checkbox" placeholder="" required title="")
+
+
+
+                    input.button.input(type="submit" name="submit" value="Готово") 

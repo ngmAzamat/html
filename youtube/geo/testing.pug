@@ -1,0 +1,44 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    title hello Louis of anjoi
+    link(
+    rel="stylesheet"
+    href="style.css"
+    )
+  body
+
+    .header 
+        a(href="") 
+    .header 
+        a(href="") 
+    .header 
+        a(href="") 
+    .header 
+        a(href="") 
+  
+
+    nav.nav
+      ul
+        li 
+            a(href="") 
+        li
+            a(href="") 
+        li
+            a(href="") 
+        li
+            a(href="") 
+
+    
+    .burger
+      span
+    
+
+    script
+        document.querySelector('.burger').addEventListener('click', function(){
+        this.classList.toggle('active');
+        document.querySelector('.nav').classList.toggle('open');
+    })
+
+

@@ -1,0 +1,73 @@
+
+.main {
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    background-color: #fafafa;
+}
+
+.container {
+    display: flex;
+}
+.youtube {
+    height: 180px;
+}
+.aside {
+    width: 10%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    background-color: #fafafa;
+    
+
+}
+.video {
+    height: 300px;
+    margin: 3px;
+}
+
+.banner {
+    height: 50px;
+    border-radius: 30px;
+}
+.block {
+    display: flex;
+    margin: 3px;
+    padding: 5px;
+}
+.first {
+    padding: 5px;
+    
+}
+.bloc {
+    margin: 30px;
+}
+
+.com {
+    height: 200px;
+    border-radius: 120px;
+    padding: 5px;
+
+}
+
+.a {
+    display:flex;
+    justify-content: center;
+    width: 80%;
+}
+.center {
+    display: flex;
+    align-items: center;
+    
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    padding:2.5px;
+
+}
+

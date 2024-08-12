@@ -1,0 +1,19 @@
+body {
+    padding: 100px;
+}
+
+.container {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    transition: all 1s;
+    transition-delay: 0.2s;
+}
+
+.container:hover {
+    background-color: brown;
+    transform: scale(1.5) rotate(45deg);
+}
+
+
+@keyframes {}

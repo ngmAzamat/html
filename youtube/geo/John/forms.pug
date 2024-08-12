@@ -1,0 +1,20 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        title Youtube
+        link(
+            rel="icon"
+            href="/home/azamat/html/youtube/geo/pngwing.com.png"
+            type="image/x-icon"
+            )
+        
+        link(rel="stylesheet" href="forms.css")
+    body
+        .main
+            .account 
+                form(id="main-form" method="post")
+                    .form-group 
+                        input.input(type="text" placeholder="" id="name" required minlength="5" maxlength="10" pattern="[а-яА-Я]+" 
+                        title="имя должно содержать только Английский и Русские Буквы")
+                        .label(for="name") Имя

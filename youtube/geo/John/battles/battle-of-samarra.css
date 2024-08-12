@@ -1,0 +1,290 @@
+body {
+    background-image: url(map-samarra.png);
+}
+.eng {
+    display: flex;
+}
+.army-eng {    
+    position: relative;
+    margin: 2px;
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+}
+
+.cav-eng {
+    animation: charge 20s;
+    left: 500px;
+    top: 800px;
+    border-radius: 50%;
+
+}
+
+
+.flang-per {
+    animation: attack-flang-per 20s;
+    left: 500px;
+    top: 800px;
+    border-radius: 50%;
+
+}
+
+.y-eng {
+    animation: attack 20s;
+
+    left: 500px;
+    top: 800px;
+}
+
+.x-eng {
+    animation: attack 20s;
+
+    left: 500px;
+    top: 800px;
+}
+
+
+
+.a-eng {
+    animation: attack 20s;
+
+    left: 500px;
+    top: 800px;
+}
+
+.b-eng {
+    animation: attack 20s;
+
+
+    left: 500px;
+    top: 800px;
+}
+.c-eng {
+    animation: attack 20s;
+
+
+    left: 500px;
+    top: 800px;
+}
+.d-eng {
+    animation: attack 20s;
+
+
+    left: 500px;
+    top: 800px;
+}
+
+
+img {
+    height: 50px;
+    width: 50px;
+}
+
+#cav {
+    border-radius: 50%;
+}
+
+
+.fre {
+    display: flex;
+}
+
+.flang-ot {
+    animation: attack-flang-ot 20s;
+    left: 1300px;
+    top: 100px;
+    border-radius: 50%;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    margin: 2px;
+
+}
+
+.first-army-fre {
+    animation: oborone 20s;
+
+    left: 500px;
+    top: 100px;
+}
+.second-army-fre {
+    animation: oborone 20s;
+
+    left: 500px;
+    top: 100px;
+}
+.a-army-fre {
+    animation: oborone 20s;
+
+    left: 500px;
+    top: 100px;
+}
+
+.b-army-fre {
+    animation: oborone 20s;
+
+    left: 500px;
+    top: 100px;
+}
+.c-army-fre {
+    animation: oborone 20s;
+
+    left: 500px;
+    top: 100px;
+}
+.d-army-fre {
+    animation: oborone 20s;
+
+    left: 500px;
+    top: 100px;
+}
+
+
+.cav-reserve {    
+    border-radius: 50%;
+    left: 1100px;
+    top: 400px;
+}
+.new {
+    display: flex;
+}
+
+
+.reserve {
+    animation: reserve 20s;
+    left: 750px;
+    top: -60px;
+
+
+}
+
+.army-fre {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    margin: 2px;
+
+}
+
+
+
+
+@keyframes attack-flang-per {
+    50% {
+        left: 870px;
+        top: 450px;
+    }
+    100% {
+        left: 870px;
+        top: 450px;
+    }
+}
+@keyframes attack-flang-ot {
+    50% {
+        left: 1290px;
+        top: 290px;
+    }
+    100% {
+        left: 1290px;
+        top: 290px;
+    }
+}
+
+
+
+@keyframes oborone {
+    50% {
+        left: 500px;
+        top: 100px;
+    }
+    55% {
+        left: 500px;
+        top: 90px;
+    }
+    60% {
+        left: 500px;
+        top: 100px;
+    }
+    70% {
+        left: 500px;
+        top: 110px;
+    }
+    100% {
+        left: 500px;
+        top: 110px;
+    }
+}
+
+@keyframes attack {
+    50% {
+        left: 550px;
+        top: 220px;
+    }
+    55% {
+        left: 550px;
+        top: 210px;
+    }
+    60% {
+        left: 550px;
+        top: 220px;
+    }
+    70% {
+        left: 550px;
+        top: 230px;
+    }
+    85% {
+        left: 550px;
+        top: 230px;
+    }
+    100% {
+        left: 550px;
+        top: 740px;
+    }
+}
+
+
+@keyframes charge {
+    60% {
+        left: 500px;
+        top: 800px;
+    }
+    80% {
+        left: 800px;
+        top: 300px;
+    }
+    100% {
+        left: 800px;
+        top: 800px;
+    }
+}
+
+
+
+@keyframes reserve {
+    50% {
+
+        left: 750px;
+        top: -60px;
+    
+    }
+    55% {
+        left: 750px;
+        top: 30px;
+    }
+    60% {
+        left: 750px;
+        top: 40px;
+    }
+    65% {
+        left: 750px;
+        top: 50px;
+    }
+    
+    100% {
+        left: 750px;
+        top: 50px;
+    }
+}
+

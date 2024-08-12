@@ -1,0 +1,20 @@
+body {
+    min-height: 90vh;
+}
+.block {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+}
+.top {
+    transform: translateY(-100px);
+}
+.nis {
+    transform: translateY(100px);
+}
+.left {
+    transform: translateX(-100px);
+}
+.right {
+    transform: translateX(100px);
+}

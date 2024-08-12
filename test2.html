@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="test2.css">
+</head>
+<style>
+* {
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+a {
+  text-decoration: none;
+  color: red;
+}
+.container {
+  width: 1200px;
+  margin: auto;
+}
+#burger, [for=burger] {
+  display: none;
+}
+@media (max-width: 800px) {
+  .container{
+    width: 100%;
+  }
+  [for=burger] {
+    display: block;
+  }
+  nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    margin-top: 30px;
+    background: #000;
+    width: 100%;
+    height: 100%;
+  }
+  #burger:checked + label + nav {
+    display: block;
+  }
+
+}
+
+</style>
+
+<body>
+  <div class="container">
+    <input type="checkbox" id="burger">
+    <label for="burger">☰</label>
+    <nav>
+      <ul>
+        <li><a href="#">Lorem.</a></li>
+        <li><a href="#">Laboriosam?</a></li>
+        <li><a href="#">Dolorem.</a></li>
+        <li><a href="#">Et!</a></li>
+        <li><a href="#">Amet?</a></li>
+      </ul>
+    </nav>
+      <section>
+        <h2>Заголовок</h2>
+        <p></p>
+        <p></p>
+      </section>
+    </div>
+
+
+</body> 
+</html>

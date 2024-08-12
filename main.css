@@ -1,0 +1,24 @@
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th {
+  background-color: aqua;
+}
+div {
+  margin: 20px;
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  padding: 20px;
+}
+#a {
+  float: left;
+}
+#b {
+  float: left;
+}
+#c {
+  float: left;
+}
+

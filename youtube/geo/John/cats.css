@@ -1,0 +1,83 @@
+@keyframes move-to-right {
+    45% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(-10px, -100px);
+    }
+    55% {
+        transform: translate(0px, 0px);
+
+    }
+    90% {
+        transform: translate(0px, 0px);
+    }
+    100%{
+        translate: 90vw;
+        transform: scale(-1, -1);
+        transform: translateY(1000px);
+
+
+    }
+
+}
+
+
+
+.cats3 {
+    border: none;
+    border-bottom: 5px solid red;
+    height: 50px;
+    width: 82.7075vw;
+}
+
+.dino{
+    height: 50px;
+    width: 50px;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+/*
+    animation-name: move-to-right;
+    animation-duration: 10s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+*/
+}
+
+
+.dino:hover {
+    height: 50px;
+    width: 50px;
+    animation-name: move-to-right;
+    animation-duration: 10s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+/*    animation-play-state: paused;*/
+}
+
+
+.box2 {
+    width: 50px;
+    height: 50px;
+    background-color: lightskyblue;
+    transition-duration: 3s;
+    transition-property: all;
+    transition-delay: 1s;
+    transition-timing-function: ease;
+}
+.box2:hover{
+    transform: translate(100px, 100px);
+
+}
+
+.text::marker{
+    content: "🇬🇧";
+}
+
+.button {
+    height: 100px;
+    width: 100px;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="but">
+        <div class="charge charge-cav"><p>Кавалерия в Атаку</p></div>
+        <div class="charge charge-peh"><p>Пехота в Атаку</p></div>
+        <div class="charge charge-res"><p>1 Резерв на левый фланг</p></div>
+        <div class="charge charge-res2"><p>2 Резерв на левый фланг</p></div>
+    </div>
+    <div class="battle">
+
+        <div class="eng">
+            <div class="x-eng army-eng">
+                <img src="Banner_of_the_Holy_Roman_Emperor_with_haloes_(1430-1806).svg.png">
+            </div>
+            <div class="y-eng army-eng">
+                <img src="Banner_of_the_Holy_Roman_Emperor_with_haloes_(1430-1806).svg.png">
+            </div>
+            <div class="cav-eng army-eng">
+                <img id="cav" src="Banner_of_the_Holy_Roman_Emperor_with_haloes_(1430-1806).svg.png">
+            </div>
+            <div class="a-eng army-eng">
+                <img src="Banner_of_the_Holy_Roman_Emperor_with_haloes_(1430-1806).svg.png">
+
+            </div>
+            <div class="b-eng army-eng">
+                <img src="Banner_of_the_Holy_Roman_Emperor_with_haloes_(1430-1806).svg.png">
+
+            </div>
+
+            <div class="c-eng army-eng">
+                <img src="Banner_of_the_Holy_Roman_Emperor_with_haloes_(1430-1806).svg.png">
+            </div>
+            <div class="d-eng army-eng">
+                <img src="Banner_of_the_Holy_Roman_Emperor_with_haloes_(1430-1806).svg.png">
+            </div>
+        </div>
+        <div class="fre">
+
+
+            <div class="flang-ot army-fre">
+                <img src="Flag_of_Ottoman_Empire_(Square).svg.png">
+
+            </div>
+
+            <div class="a-army-fre army-fre">
+                <img src="Flag_of_Ottoman_Empire_(Square).svg.png">
+
+            </div>
+
+
+            <div class="b-army-fre army-fre">
+                <img src="Flag_of_Ottoman_Empire_(Square).svg.png">
+
+            </div>
+
+            <div class="c-army-fre army-fre">
+                <img src="Flag_of_Ottoman_Empire_(Square).svg.png">
+
+            </div>
+
+            <div class="d-army-fre army-fre">
+                <img src="Flag_of_Ottoman_Empire_(Square).svg.png">
+
+            </div>
+
+
+        </div>
+
+        <div class="cav-reserve army-fre">
+            <img id="cav" src="Flag_of_Ottoman_Empire_(Square).svg.png">
+        </div>
+        <div class="new">
+            <div class="reserve">
+                <img id="cav" src="Flag_of_Ottoman_Empire_(Square).svg.png">
+            </div>
+            <div class="reserve">
+                <img id="cav" src="Flag_of_Ottoman_Empire_(Square).svg.png">
+            </div>
+            <div class="reserve">
+                <img id="cav" src="Flag_of_Ottoman_Empire_(Square).svg.png">
+            </div>
+            <div class="reserve">
+                <img id="cav" src="Flag_of_Ottoman_Empire_(Square).svg.png">
+            </div>
+        </div>
+    </div>
+    <script>
+        let charge = document.querySelector('.charge-cav')
+        let peh = document.querySelector('.charge-peh')
+        let res = document.querySelector('.charge-res')
+        let res2 = document.querySelector('.charge-res2')
+        let cav = document.querySelector('.cav-eng')
+        let pehota = document.querySelector('.a-eng')
+        let pehota2 = document.querySelector('.b-eng')
+        let pehota3 = document.querySelector('.c-eng')
+        let pehota4 = document.querySelector('.d-eng')
+        let reserve = document.querySelector('.x-eng')
+        let reserve2 = document.querySelector('.y-eng')
+        charge.addEventListener('click', ()=> {
+            cav.classList.add('green')
+        })
+        peh.addEventListener('click', ()=> {
+            pehota.classList.add('green-a')
+            pehota2.classList.add('green-b')
+            pehota3.classList.add('green-c')
+            pehota4.classList.add('green-d')
+        })
+        res.addEventListener('click', ()=> {
+            reserve.classList.add('green-y')
+
+        })
+        res2.addEventListener('click', ()=> {
+            reserve2.classList.add('green-x')
+        })
+    </script>
+
+</body>
+</html>

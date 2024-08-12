@@ -1,0 +1,112 @@
+
+
+.army-eng {
+    margin: 2px;
+    height: 50px;
+    width: 125px;
+    background-color: red;
+    border: 1px solid silver;
+    transform: translate(100px, 200px);
+
+}
+.a-army-eng {
+
+    transform: translate(100px, 200px);
+    animation: go-back 10s;
+    animation-delay: 1.1s;
+
+
+}
+
+.b-army-eng {
+    transform: translate(100px, 200px);
+    animation: go-back 10s;
+    animation-delay: 1.1s;
+
+}
+
+.c-army-eng {
+    animation: go-back 10s;
+    animation-delay: 1.1s;
+
+}
+.d-army-eng {
+    transform: translate(100px, 200px);
+    animation: go-back 10s;
+    animation-delay: 1.1s;
+
+
+}
+.e-army-eng {
+    transform: translate(100px, 200px);
+    animation: go-back 10s;
+    animation-delay: 1.1s;
+
+
+}
+.a-army-fre {
+    rotate: -90deg;
+    left: 1000px;
+    top: 700px;
+}
+
+.b-army-fre {
+    rotate: -90deg;
+    left: 1080x;
+    top: 650px;
+}
+
+.c-army-fre {
+    rotate: -90deg;
+    left: 1160px;
+    top: 600px;
+}
+
+
+
+.d-army-fre {
+    rotate: -90deg;
+    left: 1240px;
+    top: 550px;
+}
+
+
+
+.e-army-fre {
+    rotate: -90deg;
+    left: 1320px;
+    top: 500px;
+}
+
+
+.army-fre {
+    position: relative;
+    height: 50px;
+    width: 125px;
+    background-color: blue;
+    border: 1px solid silver;
+    animation: attack 10s;
+
+}
+
+
+.eng {
+    display: flex;
+}
+
+
+@keyframes attack {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    90% {
+        transform: translateY(-600px);
+        rotate: -90deg;
+
+
+    }
+    100% {
+        transform: translate(-600px, -600px);
+        rotate: 0deg;
+    }
+}

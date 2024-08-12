@@ -1,0 +1,98 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/html/flex-box.css">
+</head>
+<body>
+
+
+<div class="container">
+<div class="header"><a href="home.html">Главная</a></div>
+<div class="header"><a href="Horse.html">Конь</a></div>
+<div class="header"><a href="Cat.html">Кот</a></div>
+<div class="header">Корова</div>
+</div>
+
+<body>
+  
+
+    <nav class="nav">
+      <ul>
+        <li><a href="home.html">Главная</a></li>
+        <li><a href="Horse.html">Конь</a></li>
+        <li><a href="Cat.html">Кот</a></li>
+        <li><a href="Cow.html">Корова</a></li>
+      </ul>
+    </nav>
+    <div class="burger">
+      <span></span>
+    </div>
+
+<script>
+  document.querySelector('.burger').addEventListener('click', function(){
+    this.classList.toggle('active');
+    document.querySelector('.nav').classList.toggle('open');
+  })
+</script>
+
+<div class="container">
+<div class="main">
+  <audio controls>
+    <source src="https://upload.wikimedia.org/wikipedia/commons/4/48/Mudchute_cow_1.ogg" type="audio/ogg">
+  </audio> 
+</div>
+
+<div class="aside">
+<table>
+  <tr>
+    <th colspan="2">Корова</th>
+  <tr>
+    <th colspan="3"><img class="mount quebek" src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cow_%28Fleckvieh_breed%29_Oeschinensee_Slaunger_2009-07-07.jpg"></th>
+  <tr>
+    <td>Домен</td>
+    <td>Эукариоты</th>
+    <td>Eukaryota</td>
+  </tr>
+  <tr>
+    <td>царство</td>
+    <td>Животные</td>    
+    <td>Animalia</td>
+  </tr>
+  <tr>
+    <td>Тип</td>
+    <td>Хордовые</td>
+    <td>Chordata</td>
+  </tr>
+  <tr>
+    <td>Класс</td>
+    <td>Млекопитающие</td>
+    <td>Mammalia</td>
+  </tr>  
+  <tr>
+    <td>Отряд</td>
+    <td>Китопарнокопытное</td>
+    <td>Artiodactyla</td>
+    <td></td>
+  </tr> 
+  <tr>
+    <td>Семейство</td>
+    <td>Полорогие</td>
+    <td>Bovidae</td>
+    <td></td>
+  </tr> 
+  <tr>
+    <td>Род</td>
+    <td>Настоящие быеи</td>
+    <td>Bos</td>
+    
+  </tr>
+  <tr>
+    <td>Вид</td>
+    <td>Домашний Бык</td>
+    <td>Bos taurus</td>
+  </tr>
+</table>
+</div>
+</div>
+</body>
+</html>

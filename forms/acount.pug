@@ -20,16 +20,16 @@ html
                         title="имя должно содержать только Английский и Русские Буквы")
                         label.label(for="name") Имя
                     .form-group 
-                        input.input(type="email" placeholder="" required title="email должен содержать знак @")
+                        input.input(type="email" placeholder="" id="email" required title="email должен содержать знак @")
                         label.label(for="password") email
                     .form-group 
-                        input.input(type="password" placeholder="" required minlength="4" maxlength="10" title="пароль должен содержать 4 и более вплоть до 15 символов")
+                        input.input(type="password" placeholder="" id="pass" required minlength="4" maxlength="10" title="пароль должен содержать 4 и более вплоть до 15 символов")
                         label.label(for="password") Пароль
                     .form-group 
-                        input.input(type="password" placeholder="" required minlength="4" maxlength="15" title="этот пароль должен совподать с превидущим паролем")
+                        input.input(type="password" placeholder="" id="repass" required minlength="4" maxlength="15" title="этот пароль должен совподать с превидущим паролем")
                         label.label(for="repass") Проверка пароля
                     .form-group 
-                        input.input(type="nubmer" placeholder="" required title="для вас будет зарезервирован номер")
+                        input.input(type="nubmer" placeholder="" id="number" required title="для вас будет зарезервирован номер")
                         label.label(for="repass") число
                     .form-group 
                         label.checkbox(for="repass") я не робот
@@ -38,3 +38,4 @@ html
 
 
                     input.button.input(type="submit" name="submit" value="Готово") 
+        script(src="~/html/youtube/geo/John/battles/javascript-code/javasript-code/forms.js")

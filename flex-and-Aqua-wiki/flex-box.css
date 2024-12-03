@@ -3,7 +3,6 @@ a {
   text-decoration: none;
 }
 
-
 .open {
   display: flex !important;
 }
@@ -21,7 +20,6 @@ a {
   justify-content: flex-end;
   width: 30px;
   height: 18px;
-  
 }
 .burger span {
   height: 2px;
@@ -30,18 +28,25 @@ a {
   transform: scale(1);
 }
 
-.burger::before, .burger::after {
+.burger::before,
+.burger::after {
   position: absolute;
-  content: '';
+  content: "";
   height: 2px;
   width: 100%;
   background-color: #003cff;
   transition: all 0.3s ease 0s;
 }
 
-.burger::before { top: 0 }
-.burger::after {bottom: 0;}
-.burger.active span { transform: scale(0);}
+.burger::before {
+  top: 0;
+}
+.burger::after {
+  bottom: 0;
+}
+.burger.active span {
+  transform: scale(0);
+}
 
 .burger.active::before {
   top: 50%;
@@ -52,39 +57,50 @@ a {
   transform: rotate(45deg) translate(0, 50%);
 }
 
-
 @media (max-width: 2000px) {
-  .burger { display: none; }
-  .nav { display: none; }
+  .burger {
+    display: none;
+  }
+  .nav {
+    display: none;
+  }
 }
-
-
 
 @media (max-width: 1000px) {
-.header { display: none;}
-.burger { display: flex }
-.nav {
-  display: none;
-  flex-direction: column;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  padding: 50px 40px;
-  z-index: 50;
-  overflow-y: auto;
-  top: 0; bottom: 0; right: 0; left: 0;
-  animation: BurgerAnimation 0.4s;
-}
-.nav ul {
-  flex-direction: column;
-  row-gap: 30px;
-}
-
+  .header {
+    display: none;
+  }
+  .burger {
+    display: flex;
+  }
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    padding: 50px 40px;
+    z-index: 50;
+    overflow-y: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    animation: BurgerAnimation 0.4s;
+  }
+  .nav ul {
+    flex-direction: column;
+    row-gap: 30px;
+  }
 }
 @keyframes BurgerAnimation {
-from {opacity: o;}
-to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .container {
@@ -108,11 +124,11 @@ to {opacity: 1;}
   background-color: #333;
   color: #fafafa;
   padding: 25px;
-  border:1px solid black ;
+  border: 1px solid black;
   border-collapse: collapse;
 }
 .main {
-  width:45%;
+  width: 45%;
   margin: 5%;
   margin-top: 2.5%;
   margin-right: 2.5%;
@@ -129,7 +145,7 @@ to {opacity: 1;}
   border: 1px solid silver;
   order: 1;
 }
-.footer {  
+.footer {
   height: 70px;
   width: 100%;
   text-align: center;
@@ -146,7 +162,6 @@ to {opacity: 1;}
   .container {
     display: grid;
     grid-template-columns: 1fr;
-
   }
   .header {
     margin: 0;
@@ -157,9 +172,9 @@ to {opacity: 1;}
     background-color: #333;
     color: #fff;
     line-height: 70px;
-}
+  }
   .main {
-    width:80%;
+    width: 80%;
     margin: 5%;
     margin-top: 2.5%;
     margin-right: 2.5%;
@@ -181,56 +196,48 @@ to {opacity: 1;}
   }
 }
 
-
-
-
-
-
-
 @media (min-width: 600px) and (max-width: 749px) {
-  .mount{
+  .mount {
     height: 140px;
-  .header {
-    margin: 0;
-    height: 70px;
-    width: 25%;
-    text-align: center;
-    border-bottom: 4px solid silver;
-    background-color: #333;
-    color: #fff;
-    line-height: 70px;
-}
-  .main {
-    width:45%;
-    margin: 5%;
-    margin-top: 2.5%;
-    margin-right: 2.5%;
-    background-color: #fafafa;
-    border: 1px solid silver;
-    padding: 1;
-    order: -1;
-  }
-  .aside {
-    width: 25%;
-    margin: 1%;
-    padding: 1%;
-    background-color: #fafafa;
-    border: 1px solid silver;
-    order: 1;
-  }
+    .header {
+      margin: 0;
+      height: 70px;
+      width: 25%;
+      text-align: center;
+      border-bottom: 4px solid silver;
+      background-color: #333;
+      color: #fff;
+      line-height: 70px;
+    }
+    .main {
+      width: 45%;
+      margin: 5%;
+      margin-top: 2.5%;
+      margin-right: 2.5%;
+      background-color: #fafafa;
+      border: 1px solid silver;
+      padding: 1;
+      order: -1;
+    }
+    .aside {
+      width: 25%;
+      margin: 1%;
+      padding: 1%;
+      background-color: #fafafa;
+      border: 1px solid silver;
+      order: 1;
+    }
   }
 }
 
 @media (min-width: 750px) and (max-width: 999px) {
-  .mount{
+  .mount {
     height: 180px;
   }
 }
 
-
 @media (min-width: 1000px) and (max-width: 1450px) {
-  .mount{
+  .mount {
     height: 200px;
   }
 }
-
